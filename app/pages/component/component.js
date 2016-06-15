@@ -2,6 +2,7 @@ import {Component} from '@angular/core';
 import {NavController} from 'ionic-angular';
 import {ActionSheetPage} from '../action-sheet/action-sheet';
 import {AlertPage} from '../alert/alert';
+import {BadgePage} from '../badge/badge';
 
 /*
   Generated class for the ComponentPage page.
@@ -25,6 +26,9 @@ export class ComponentPage {
     },{
         title: 'Alerts',
         page: AlertPage
+    },{
+        title: 'Badges',
+        page: BadgePage
     }];
   }
 
