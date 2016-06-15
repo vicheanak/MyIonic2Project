@@ -1,6 +1,7 @@
 import {Component} from '@angular/core';
 import {NavController} from 'ionic-angular';
 import {ActionSheetPage} from '../action-sheet/action-sheet';
+import {AlertPage} from '../alert/alert';
 
 /*
   Generated class for the ComponentPage page.
@@ -20,14 +21,14 @@ export class ComponentPage {
     this.nav = nav;
     this.items = [{
         title: 'Action Sheet',
-        id: 'action_sheet'
+        page: ActionSheetPage
     },{
         title: 'Alerts',
-        id: 'alert'
+        page: AlertPage
     }];
   }
 
   itemTapped(event, item){
-      this.nav.push(ActionSheetPage);
+      this.nav.push(item.page);
   }
 }
