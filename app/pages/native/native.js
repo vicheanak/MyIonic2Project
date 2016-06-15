@@ -1,5 +1,6 @@
 import {Component} from '@angular/core';
 import {NavController} from 'ionic-angular';
+import {SqlitePage} from '../sqlite/sqlite';
 
 /*
   Generated class for the NativePage page.
@@ -19,12 +20,11 @@ export class NativePage {
     this.nav = nav;
     this.items = [{
         title: 'SQLLite',
-        page: 'SqlLitePage'
+        page: SqlitePage
     }];
   }
 
   itemTapped(event, item){
-      console.log(item);
-      // this.nav.push(item.page);
+      this.nav.push(item.page);
   }
 }
