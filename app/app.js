@@ -4,6 +4,7 @@ import {StatusBar} from 'ionic-native';
 import {HelloIonicPage} from './pages/hello-ionic/hello-ionic';
 import {ListPage} from './pages/list/list';
 import {ComponentPage} from './pages/component/component';
+import {NativePage} from './pages/native/native';
 
 
 @Component({
@@ -25,13 +26,12 @@ class MyApp {
 
         // set our app's pages
         this.pages = [
-            { title: 'Hello Ionic', component: HelloIonicPage },
-            { title: 'My First List', component: ListPage },
-            { title: 'Component', component: ComponentPage }
+            { title: 'Component', component: ComponentPage },
+            { title: 'Native', component: NativePage }
         ];
 
         // make HelloIonicPage the root (or first) page
-        this.rootPage = HelloIonicPage;
+        this.rootPage = ComponentPage;
     }
 
     initializeApp() {
