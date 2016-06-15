@@ -1,10 +1,9 @@
-An h1 header
+My Ionic 2 App
 ============
 
-Paragraphs are separated by a blank line.
+This project will demonstate the Ionic 2 framework with all components.
 
-2nd paragraph. *Italic*, **bold**, and `monospace`. Itemized lists
-look like:
+Available components are:
 
   * this one
   * that one
