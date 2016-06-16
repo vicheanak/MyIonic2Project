@@ -1,14 +1,15 @@
 <!--
-  Generated template for the SqlitePage page.
+  Generated template for the SqliteProviderPage page.
 
   See http://ionicframework.com/docs/v2/components/#navigation for more info on
   Ionic pages and navigation.
 -->
 <ion-navbar *navbar>
-  <ion-title>Sqlite</ion-title>
+  <ion-title>sqliteProvider</ion-title>
 </ion-navbar>
 
-<ion-content padding class="sqlite">
+<ion-content padding class="sqlite-provider">
+    This page is based on using ionic g provider sqlite-data
     <button full (click)="refresh()">Refresh</button>
     <button full (click)="drop()">Drop</button>
     <button full (click)="createTable()">Create Table</button>
@@ -18,4 +19,5 @@
             {{person.firstname}} {{person.lastname}}
         </ion-item>
     </ion-list>
+  
 </ion-content>

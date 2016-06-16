@@ -1,6 +1,7 @@
 import {Component} from '@angular/core';
 import {NavController} from 'ionic-angular';
 import {SqlitePage} from '../sqlite/sqlite';
+import {SqliteProviderPage} from '../sqlite-provider/sqlite-provider';
 
 /*
   Generated class for the NativePage page.
@@ -19,8 +20,11 @@ export class NativePage {
   constructor(nav) {
     this.nav = nav;
     this.items = [{
-        title: 'SQLLite',
+        title: 'SQLite',
         page: SqlitePage
+    },{
+        title: 'SQLite Provider',
+        page: SqliteProviderPage
     }];
   }
 
