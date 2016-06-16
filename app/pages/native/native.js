@@ -2,6 +2,7 @@ import {Component} from '@angular/core';
 import {NavController} from 'ionic-angular';
 import {SqlitePage} from '../sqlite/sqlite';
 import {SqliteProviderPage} from '../sqlite-provider/sqlite-provider';
+import {CameraDrawPage} from '../camera-draw/camera-draw';
 
 /*
   Generated class for the NativePage page.
@@ -25,6 +26,9 @@ export class NativePage {
     },{
         title: 'SQLite Provider',
         page: SqliteProviderPage
+    },{
+        title: 'Camera Draw',
+        page: CameraDrawPage
     }];
   }
 
